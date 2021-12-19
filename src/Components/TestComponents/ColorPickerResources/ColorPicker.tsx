@@ -11,7 +11,7 @@ const ColorPicker = () => {
             <p>
                 <div id="colorSelector"><div></div></div>
                 {/*style="background-color: #0000ff"*/}
-                ColorPickerFunc.PickColor();
+                {/*ColorPickerFunc.PickColor();*/}
             </p>
         </div>
     )
