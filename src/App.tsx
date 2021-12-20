@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Counter from "./Components/TestComponents/Counter";
+import UserComponent from "./Components/User/UserComponent";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       {/*  </a>*/}
       {/*</header>*/}
       <Counter></Counter>
+        <UserComponent />
         <br/>
 
     </div>

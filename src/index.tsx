@@ -1,13 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './Components/TestComponents/ColorPickerResources/js/jquery.js';
-import './Components/TestComponents/ColorPickerResources/js/colorpicker.js';
-import './Components/TestComponents/ColorPickerResources/js/eye.js';
-import './Components/TestComponents/ColorPickerResources/js/layout.js';
-import './Components/TestComponents/ColorPickerResources/js/utils.js';
-import './Components/TestComponents/ColorPickerResources/css/colorpicker.css';
-import './Components/TestComponents/ColorPickerResources/css/layout.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
