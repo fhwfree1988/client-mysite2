@@ -8,9 +8,19 @@ import Dashboard from './Components/Login/Component/Dashboard';
 import Preferences from './Components/Login/Component/Preferences';
 import Login from "./Components/Login/Login";
 
+function setToken(userToken:any) {
+    sessionStorage.setItem('token', JSON.stringify(userToken));
+}
+
+function getToken() {
+    const tokenString = sessionStorage.getItem('token');
+    const userToken = JSON.parse(typeof tokenString === "string" ? tokenString :"");
+    return userToken?.token
+}
 
 function App() {
-    const [token, setToken] = useState();
+    const token = getToken();
+    //const [token, setToken] = useState();
 
     if(!token) {
         return <Login myToken={setToken} />
