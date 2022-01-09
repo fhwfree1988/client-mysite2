@@ -1,9 +1,6 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Counter from "./Components/TestComponents/Counter";
-import UserComponent from "./Components/User/UserComponent";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {Route, useLocation} from 'react-router-dom';
 import Dashboard from './Components/Login/Component/Dashboard';
 import Preferences from './Components/Login/Component/Preferences';
 import Login from "./Components/Login/Login";
@@ -14,30 +11,27 @@ function setToken(userToken:any) {
 
 function getToken() {
     const tokenString = sessionStorage.getItem('token');
-    const userToken = JSON.parse(typeof tokenString === "string" ? tokenString :"");
+    const userToken = !tokenString || tokenString.toString() ==""?null: JSON.parse(tokenString);
     return userToken?.token
 }
 
 function App() {
     const token = getToken();
     //const [token, setToken] = useState();
-
-    if(!token) {
+    let location = useLocation();
+    alert(location);
+    if(!token || token.toString().trim().length==0) {
         return <Login myToken={setToken} />
     }
     return (
         <div className="wrapper">
             <h1>Application</h1>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/dashboard">
-                        <Dashboard />
-                    </Route>
-                    <Route path="/preferences">
-                        <Preferences />
-                    </Route>
-                </Routes>
-            </BrowserRouter>
+            <Route path="/dashboard" element={<Dashboard/>}>
+                {/*<Dashboard />*/}
+            </Route>
+            <Route path="/preferences" element={<Preferences/>}>
+                {/* <Preferences />*/}
+            </Route>
         </div>
     );
 }

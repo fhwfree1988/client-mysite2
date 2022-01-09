@@ -13,8 +13,7 @@ async function loginUser(credentials: any) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(credentials)
-    })
-        .then(data => data.json())
+    }).then(data => data.json())
 }
 
 type tokenProps = {
