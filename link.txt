@@ -1,3 +1,4 @@
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en
 https://blog.pusher.com/beginners-guide-react-component-lifecycle/
 https://blog.carbonfive.com/replacing-component-lifecycle-methods-with-react-hooks/
 https://www.opcito.com/blogs/lifecycle-methods-and-hooks-in-react
@@ -24,3 +25,6 @@ https://reactrouter.com/docs/en/v6/upgrading/v5#upgrade-all-switch-elements-to-r
 
 https://ordina-jworks.github.io/architecture/2021/02/12/react-generic-context.html
 https://codesandbox.io/s/react-context-usecontext-pi5uv?file=/src/Main.js:317-324
+https://dmitripavlutin.com/react-context-and-usecontext/
+https://ordina-jworks.github.io/architecture/2021/02/12/react-generic-context.html
+https://medium.com/@martin.crabtree/react-creating-a-redux-like-global-state-with-the-usecontext-and-usereducer-hooks-89aa2b27dbc5
