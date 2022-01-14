@@ -22,6 +22,15 @@ https://snyk.io/blog/10-react-security-best-practices/
 https://blog.logrocket.com/react-router-with-redux-navigation-state/
 https://blog.logrocket.com/react-router-with-redux-navigation-state/
 https://reactrouter.com/docs/en/v6/upgrading/v5#upgrade-all-switch-elements-to-routes
+https://www.react.express/patterns/data_model_props
+https://www.digitalocean.com/community/tutorials/how-to-customize-react-components-with-props
+https://stackoverflow.com/questions/44475309/how-do-i-restrict-the-type-of-react-children-in-typescript-using-the-newly-adde
+https://www.pluralsight.com/guides/defining-props-in-react-function-component-with-typescript
+https://www.digitalocean.com/community/tutorials/how-to-customize-react-components-with-props
+https://www.py4u.net/discuss/1208558
+https://stackoverflow.com/questions/65633364/how-to-use-usestate-hook-to-map-json-response-from-api
+https://www.pluralsight.com/guides/how-to-use-reactjs-and-complex-json-objects
+https://marmelab.com/react-admin/Authentication.html
 
 https://ordina-jworks.github.io/architecture/2021/02/12/react-generic-context.html
 https://codesandbox.io/s/react-context-usecontext-pi5uv?file=/src/Main.js:317-324

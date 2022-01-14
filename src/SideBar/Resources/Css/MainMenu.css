@@ -1,0 +1,11 @@
+.MainMenu{
+    border: 2px solid #282c34;
+    background-color: #898989;
+    width: 50px;
+    height:auto ;
+    min-height: 100px;
+}
+
+.MenuGroup{
+
+}
