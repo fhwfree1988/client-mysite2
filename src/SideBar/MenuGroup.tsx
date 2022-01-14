@@ -8,16 +8,16 @@ interface groupType {
 }
 
 const MenuGroup /*:FC<groupType>*/ = (group:any) => {
-
+debugger;
     return (
         <div className="MenuGroup">
             {/*{React.Children.map(groups.children,(group) => {
                 <div>{group.}</div>
             })};*/}
             <div>Salam</div>
-            <div>{group.groupName}</div>
-            {group.map((item:any) =>{
-                <div>{item.item}</div>
+            <div key={group.groupId}>{group.groupName}</div>
+            {group.Menuitem.map((item:any) =>{
+                <div key={item.item.menuId}>{item.item.menuTitle}</div>
             })}
 
         </div>
