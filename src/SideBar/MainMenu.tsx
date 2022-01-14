@@ -14,10 +14,12 @@ const MainMenu = ()=>{
 
     useEffect(()=>{
         setMenu(Data);
+        console.log("Init")
     },[]);
 
     return(
         <div className="MainMenu">
+            <div className="MainMenu">Main</div>
             {Data.map((item) => {
                 <MenuGroup group={item.group}></MenuGroup>
         })};
