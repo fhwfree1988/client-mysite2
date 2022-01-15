@@ -1,6 +1,6 @@
-const MenuItem = ()=>{
+const MenuItem = (props:any)=>{
     return(
-        <div></div>
+        <div className="MenuItem">{props.item.menuTitle}</div>
     )
 }
 export default MenuItem;
