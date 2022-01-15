@@ -22,6 +22,7 @@ https://snyk.io/blog/10-react-security-best-practices/
 https://blog.logrocket.com/react-router-with-redux-navigation-state/
 https://blog.logrocket.com/react-router-with-redux-navigation-state/
 https://reactrouter.com/docs/en/v6/upgrading/v5#upgrade-all-switch-elements-to-routes
+https://stackoverflow.com/questions/66590082/how-to-prevent-re-rendering-of-components-that-have-not-changed
 https://www.react.express/patterns/data_model_props
 https://www.digitalocean.com/community/tutorials/how-to-customize-react-components-with-props
 https://stackoverflow.com/questions/44475309/how-do-i-restrict-the-type-of-react-children-in-typescript-using-the-newly-adde

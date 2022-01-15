@@ -7,7 +7,7 @@ interface groupType {
     //group?: typeof Data
 }
 
-const MenuGroup /*:FC<groupType>*/ = (group:any) => {
+const MenuGroup /*:FC<groupType>*/ = (props:any) => {
 debugger;
     return (
         <div className="MenuGroup">
@@ -15,8 +15,8 @@ debugger;
                 <div>{group.}</div>
             })};*/}
             <div>Salam</div>
-            <div key={group.groupId}>{group.groupName}</div>
-            {group.Menuitem.map((item:any) =>{
+            <div key={props.group.groupId}>{props.group.groupName}</div>
+            {props.group.Menuitem.map((item:any) =>{
                 <div key={item.item.menuId}>{item.item.menuTitle}</div>
             })}
 

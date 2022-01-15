@@ -19,9 +19,9 @@ const AuthLayer: React.FC<any> = (myProp: any) => {
     const token = getToken();
 
     if (!Auth) {
-        // setAuth(true);
-        navigate('login');
-        return <div>Athenticated</div>
+        // setAuth(true); Storage  /1-Return Auth Layer ->> ??
+        navigate('login'); // --Router - State -- Render
+        //return <div>Athenticated</div>
     }
 
 
@@ -43,6 +43,6 @@ const AuthLayer: React.FC<any> = (myProp: any) => {
     //     </>
     // );
 
-    return null;
+    return <></>;
 }
 export default AuthLayer;
