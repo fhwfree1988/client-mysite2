@@ -12,10 +12,10 @@ const MenuGroup /*:FC<groupType>*/ = (props:any) => {
     //debugger;
     return (
         <div className="MenuGroup">
-            {props.group.groupName}
+            {/*{props.group.groupName}*/}
+            <i className={`MenuGroupIcon + ${props.group.css}`}></i>
             <div>
                 {props.group.menuitem.map((item:any) =>(
-                    /*<div key={item.menuId}>{item.menuTitle}</div>*/
                     <MenuItem key={item.menuId} item={item}></MenuItem>
                 ))}
             </div>

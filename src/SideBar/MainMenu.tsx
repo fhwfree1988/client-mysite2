@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Data from "./Resources/Data";
 import './Resources/Css/MainMenu.css';
 import MenuGroup from "./MenuGroup";
+import "../Resources/css/FontAwesome/all.css"
 
 const MainMenu = ()=>{
     const [Menu , setMenu] = useState({});

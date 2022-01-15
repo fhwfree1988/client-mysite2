@@ -1,21 +1,47 @@
 .MainMenu{
-    border: 2px solid #282c34;
-    background-color: #898989;
-    width: 50px;
+    border: 1px solid #61dafb;
+    /*background-color: #898989;*/
+    width: auto;
     height:auto ;
     min-height: 100px;
     float: right;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: #282c34 0px 5px 20px 5px;
 }
 
 .MenuGroup{
+    /*background-color: #FFFFFF;*/
 
 }
+.MenuGroupIcon{
+ /*   width: 50px;
+    height: 50px;*/
+    margin: 10px;
+    cursor: pointer;
+}
+.MenuGroup:hover{
+    background-color: lavender;
+    transition: background-color 0.2s linear
+}
 .MenuGroup:hover .MenuItem{
-    display: none;
-    transition: visibility 0.5,opacity 0.5;
+
+}
+.MenuGroup:focus .MenuItem{
+    /*display: block;*/
+    visibility: visible;
+    opacity:1;
+    transition: visibility 0.8s linear,opacity 0.8s linear;
 }
 
 .MenuItem{
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    opacity:0;
     visibility: hidden;
-    display: none;
+    /*display: none;*/
 }
