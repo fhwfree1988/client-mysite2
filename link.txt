@@ -32,6 +32,7 @@ https://www.py4u.net/discuss/1208558
 https://stackoverflow.com/questions/65633364/how-to-use-usestate-hook-to-map-json-response-from-api
 https://www.pluralsight.com/guides/how-to-use-reactjs-and-complex-json-objects
 https://marmelab.com/react-admin/Authentication.html
+https://stackoverflow.com/questions/67689551/generic-react-component-interface-whose-property-types-can-change-based-on-speci
 
 https://ordina-jworks.github.io/architecture/2021/02/12/react-generic-context.html
 https://codesandbox.io/s/react-context-usecontext-pi5uv?file=/src/Main.js:317-324

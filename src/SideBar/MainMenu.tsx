@@ -32,10 +32,9 @@ const MainMenu = ()=>{
             <div className="MainMenu">Main</div>
             <div>
                 {grid.map((group) => (
-                    <div>
-                        <div className="MainMenu">{group.groupName}</div>
-                        {/*<MenuGroup group={group}></MenuGroup>*/}
-                    </div>
+
+                        <MenuGroup key={group.groupId} group={group}></MenuGroup>
+
                 ))}
             </div>
         </div>
