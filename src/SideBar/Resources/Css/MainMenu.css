@@ -1,6 +1,9 @@
+body{
+   /* background-color: #154c79;*/
+}
 .MainMenu{
     border: 1px solid #61dafb;
-    /*background-color: #898989;*/
+    background-color: white;
     width: auto;
     height:auto ;
     min-height: 100px;
@@ -8,11 +11,18 @@
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     box-shadow: #282c34 0px 5px 20px 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 2px;
 }
-
+.MainMenu:first-child {
+    border-top-left-radius: 20px;
+}
+.MainMenu:last-child {
+    border-bottom-left-radius: 20px;
+}
 .MenuGroup{
-    /*background-color: #FFFFFF;*/
-
+    background-color: #FFFFFF;
 }
 .MenuGroupIcon{
  /*   width: 50px;
@@ -21,7 +31,7 @@
     cursor: pointer;
 }
 .MenuGroup:hover{
-    background-color: lavender;
+    background-color: #eeb78e;
     transition: background-color 0.2s linear
 }
 .MenuGroup:hover .MenuItem{
