@@ -34,11 +34,11 @@ body{
     background-color: #eeb78e;
     transition: background-color 0.2s linear
 }
-.MenuGroup:hover .MenuItem{
+/*.MenuGroup:hover .MenuItem{
 
 }
 .MenuGroup:focus .MenuItem{
-    /*display: block;*/
+    !*display: block;*!
     visibility: visible;
     opacity:1;
     transition: visibility 0.8s linear,opacity 0.8s linear;
@@ -53,5 +53,28 @@ body{
     background-color: aliceblue;
     opacity:0;
     visibility: hidden;
+    !*display: none;*!
+}*/
+.MenuItem {
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    /*opacity: 0;
+    visibility: hidden;*/
+
     /*display: none;*/
+
+}
+.MenuItem_show{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.MenuItem_hide{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
 }
