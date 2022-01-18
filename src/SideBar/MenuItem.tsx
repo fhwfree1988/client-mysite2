@@ -1,9 +1,9 @@
 import {useCallback, useEffect, useState} from "react";
 
 const MenuItem = (props:any)=>{
-    const [isOpen,setIsOpen] = useState(props.isOpen);
+    const [isOpen,setIsOpen] = useState(props.isOpen as boolean);
     let class_Name = "MenuItem_hide";
-    useCallback((isOpen)=>{
+    useCallback(()=>{
         setIsOpen(props.isOpen);
         if(isOpen)
             class_Name ="MenuItem_show";
