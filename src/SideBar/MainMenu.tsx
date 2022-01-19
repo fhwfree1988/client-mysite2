@@ -6,6 +6,7 @@ import "../Resources/css/FontAwesome/all.css"
 
 const MainMenu = ()=>{
     const [Menu , setMenu] = useState({});
+    const [openState,setOpenState] = useState([{groupId:-1,isOpen:false}]);
     /*const [data, setData] = useState([{ groupId: 1, groupName: "A",Menuitem:[{ menuId: 1, menuTitle: "M" },{ menuId: 1, menuTitle: "M" }]},
         { groupId: 2, groupName: "B" ,Menuitem:[{ menuId: 1, menuTitle: "E" },{ menuId: 1, menuTitle: "H" }]},
         { groupId: 3, groupName: "C" ,Menuitem:[{ menuId: 1, menuTitle: "X" },{ menuId: 1, menuTitle: "Z" }]}])*/
@@ -17,7 +18,7 @@ const MainMenu = ()=>{
     return(
         <div className="MainMenu">
             {Data.map((group) => (
-                <MenuGroup key={group.groupId} group={group}></MenuGroup>
+                <MenuGroup key={group.groupId} group={group} openState={openState} setOpenState={setOpenState}></MenuGroup>
             ))}
         </div>
 
