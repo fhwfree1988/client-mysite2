@@ -14,9 +14,9 @@ const MenuGroup /*:FC<groupType>*/ = (props:any) => {
     //debugger;
     if(props.group.groupId === props.openState[0].groupId && (props.openState[0].isOpen as boolean)=== true)
         isOpen =true
-    const onclick=()=>{
+    const onclick=(e:any)=>{
         //setIsOpen(!isOpen);
-        props.setOpenState([{groupId:props.group.groupId,isOpen:!isOpen}])
+        props.setOpenState([{groupId:props.group.groupId,isOpen:!isOpen,clientX:e.clientX,clientY:e.clientY}])
     };
     //debugger;
     return (
