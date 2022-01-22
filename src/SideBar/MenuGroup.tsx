@@ -25,7 +25,7 @@ const MenuGroup /*:FC<groupType>*/ = (props:any) => {
             <i className={`MenuGroupIcon + ${props.group.css}`} ></i>
             <div>
                 {props.group.menuitem.map((item:any) =>(
-                    <MenuItem key={item.menuId} item={item} isOpen={/*props.openState.isOpen*/isOpen} /*setIsOpen={setIsOpen}*/></MenuItem>
+                    <MenuItem key={item.menuId} item={item} isOpen={/*props.openState.isOpen*/isOpen} /*setIsOpen={setIsOpen}*/ openState={props.openState}></MenuItem>
                 ))}
             </div>
         </div>

@@ -15,7 +15,7 @@ const MenuItem = (props:any)=>{
     },[isOpen]);*/
     return(
 
-        <div className={`MenuItem ${class_Name}`}>{props.item.menuTitle}</div>
+        <div className={`MenuItem ${class_Name}`} style={{top : {props.openState.clientY}}}>{props.item.menuTitle}</div>
     )
 }
 export default MenuItem;
