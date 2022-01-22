@@ -5,6 +5,9 @@ const MenuItem = (props:any)=>{
     let class_Name = "MenuItem_hide";
     if(props.isOpen as boolean)
         class_Name ="MenuItem_show";
+
+    const _clientY  = props.openState[0].clientY ;
+
     /*useCallback(()=>{
         setIsOpen(props.isOpen);
         if(isOpen)
@@ -13,9 +16,10 @@ const MenuItem = (props:any)=>{
    /* useEffect((props.isOpen) => {
 
     },[isOpen]);*/
+    debugger;
     return(
 
-        <div className={`MenuItem ${class_Name}`} style={{top : {props.openState.clientY}}}>{props.item.menuTitle}</div>
+        <div className={`MenuItem ${class_Name}`} style={{top : _clientY + 'px'}}>{props.item.menuTitle}</div>
     )
 }
 export default MenuItem;
