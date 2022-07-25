@@ -12,7 +12,7 @@ const MainMenu = ()=>{
         { groupId: 3, groupName: "C" ,Menuitem:[{ menuId: 1, menuTitle: "X" },{ menuId: 1, menuTitle: "Z" }]}])*/
 
     useEffect(()=>{
-        console.log("Init")
+        //console.log("Init")
     },[]);
 
     return(

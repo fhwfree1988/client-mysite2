@@ -16,7 +16,7 @@ const MenuItem = (props:any)=>{
    /* useEffect((props.isOpen) => {
 
     },[isOpen]);*/
-    debugger;
+    //debugger;
     return(
 
         <div className={`MenuItem ${class_Name}`} style={{top : _clientY + 'px'}}>{props.item.menuTitle}</div>
