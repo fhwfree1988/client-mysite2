@@ -11,6 +11,7 @@ const ProductList =()=>{
         this.setState({employees: response.entity._embedded.employees});
     });*/
     ProductService.getProducts('P').then((response) => {
+        console.log(response.data);
         setItemProductsState({ products: response.data})
 
     });
