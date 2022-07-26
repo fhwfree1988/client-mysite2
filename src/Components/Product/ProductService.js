@@ -6,7 +6,10 @@ class ProductService {
 
     getProducts(contain){
         debugger;
-        return axios.get(PRODUCT_REST_API_URL + contain);
+        return axios.get(PRODUCT_REST_API_URL + contain, {headers:{'Access-Control-Allow-Origin': '*'}, crossDomain: true})/*.then(data=>{
+            //code
+        })*/;
+
     }
 }
 
