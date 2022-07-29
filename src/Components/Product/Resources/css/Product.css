@@ -1,10 +1,23 @@
 .product_container{
     background-color: #0dcaf0;
     margin: 10px;
-    height: 100px;
-    width: 100px;
+    /*height: 100px;
+    width: 100px;*/
     border: 1px solid black;
     border-radius: 4px;
+    display:inline-block;
+    direction: rtl;
+    width: 130px;
+    height: 200px;
+}
+.product_label{
+    background-color: #eeb78e;
+}
+.product_cost{
+    background-color: #eeb78e;
+}
+.product_image{
+    background-color: #eeb78e;
 }
 .productlist-container{
     background-color:#b6d4fe;

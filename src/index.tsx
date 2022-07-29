@@ -10,7 +10,7 @@ import ProductList from "./Components/Product/ProductList";
 ReactDOM.render(
     <React.StrictMode>
         {/*<SecurityComponent/>*/}
-        <MainMenu></MainMenu>
+        {/*<MainMenu></MainMenu>*/}
         <ProductList></ProductList>
     </React.StrictMode>,
     document.getElementById('root')
