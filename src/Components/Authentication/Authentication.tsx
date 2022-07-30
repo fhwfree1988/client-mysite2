@@ -5,7 +5,7 @@ import React, {useEffect, useState} from "react";
 const Authentication : React.FC = props =>{
     const [isAuthenticated,setAuthenticated] = useState(false);//useSecurity();
     useEffect(()=>{
-        setAuthenticated(false);
+        setAuthenticated(true);
     },[])
 
     let ret = props.children;

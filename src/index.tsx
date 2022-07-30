@@ -8,6 +8,8 @@ import MainMenu from "./SideBar/MainMenu";
 import ProductList from "./Components/Product/ProductList";
 import Authentication from "./Components/Authentication/Authentication";
 import {BrowserRouter, Routes} from "react-router-dom";
+import HomePage from "./Components/Home/HomePage";
+import Header from "./Components/Home/Header";
 
 /*ReactDOM.render(
     <React.StrictMode>
@@ -24,14 +26,16 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
 /*    <SecurityProvider>*/
         <Authentication>
-            <BrowserRouter>
+            <Header></Header>
+            <HomePage></HomePage>
+            {/*<BrowserRouter>
                 <Routes>
-                    {/*<Route path="/chert" element={<Chert/>}/>
-                    <Route path="/pert" element={<Pert/>}/>*/}
+                    <Route path="/chert" element={<Chert/>}/>
+                    <Route path="/pert" element={<Pert/>}/>
                 </Routes>
-                {/*<App/>*/}
+                <App/>
                 <ProductList></ProductList>
-            </BrowserRouter>
+            </BrowserRouter>*/}
         </Authentication>
 /*    </SecurityProvider>*/
     , rootElement);

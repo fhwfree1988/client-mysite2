@@ -3,7 +3,7 @@
     margin: 10px;
     /*height: 100px;
     width: 100px;*/
-    border: 1px solid black;
+    border: 1px solid #6a1a21;
     border-radius: 4px;
     display:inline-block;
     direction: rtl;
@@ -20,7 +20,7 @@
     background-color: #eeb78e;
 }
 .productlist-container{
-    background-color:#b6d4fe;
+    /*background-color:#b6d4fe;*/
     margin: 10px;
     padding: 10px;
     height: auto;

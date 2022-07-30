@@ -5,6 +5,7 @@ import Dashboard from './Components/Login/Component/Dashboard';
 import Preferences from './Components/Login/Component/Preferences';
 import Login from "./Components/Login/Login";
 
+
 function setToken(userToken:any) {
     sessionStorage.setItem('token', JSON.stringify(userToken));
 }
