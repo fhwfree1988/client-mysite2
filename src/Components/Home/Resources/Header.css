@@ -21,3 +21,24 @@
     left: -50px;
     top: -10px;
 }
+
+.loginContainer{
+    float: right;
+
+}
+.sign-in{
+    border-radius: 5px;
+    background-color: #198754;
+    width: 70px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+}
+.sign-up{
+    border-radius: 5px;
+    background-color: #25cff2;
+    width: 70px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+}

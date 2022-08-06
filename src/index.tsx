@@ -10,7 +10,7 @@ import Authentication from "./Components/Authentication/Authentication";
 import {BrowserRouter, Routes} from "react-router-dom";
 import HomePage from "./Components/Home/HomePage";
 import Header from "./Components/Home/Header";
-
+import './i18n/i18n';
 /*ReactDOM.render(
     <React.StrictMode>
         {/!*<SecurityComponent/>*!/}
