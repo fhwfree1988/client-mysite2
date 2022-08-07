@@ -1,12 +1,12 @@
 import "./Resources/Header.css";
 import {Trans, useTranslation} from "react-i18next";
+import React, {useContext} from "react";
+import {Languages, ThemeContext} from "../../AppContext";
 
-const lngs:any = {
-    en: { nativeName: 'English' },
-    de: { nativeName: 'Persian' }
-};
+
 const Header = ()=>{
     const { t,i18n  } = useTranslation();
+    const theme = useContext(ThemeContext);
     return(
         <div className="header">
             <img src={require('./Resources/Images/logo.png')} className="header-logo"/>
@@ -15,12 +15,24 @@ const Header = ()=>{
                 <div className="sign-up">{t('login.sign_up')}</div>
             </div>
             <div>
-                {Object.keys(lngs).map((lng) => (
+                {Object.keys(Languages).map((lng) => (
                     <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                        {lngs[lng].nativeName}
+                        {Languages[lng].nativeName}
                     </button>
                 ))}
             </div>
+
+
+            <ThemeContext.Consumer>
+                {({theme, toggleTheme}) => (
+                    <button
+                        onClick={toggleTheme}
+                        style={{backgroundColor: theme.background}}>
+                        Toggle Theme
+                    </button>
+                )}
+            </ThemeContext.Consumer>
+
             {/*<p>
                 <Trans i18nKey="description.part1">
                     Edit <code>src/App.js</code> and save to reload.

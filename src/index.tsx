@@ -11,6 +11,7 @@ import {BrowserRouter, Routes} from "react-router-dom";
 import HomePage from "./Components/Home/HomePage";
 import Header from "./Components/Home/Header";
 import './i18n/i18n';
+import MainApp from "./mainApp";
 /*ReactDOM.render(
     <React.StrictMode>
         {/!*<SecurityComponent/>*!/}
@@ -26,8 +27,9 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
 /*    <SecurityProvider>*/
         <Authentication>
-            <Header></Header>
-            <HomePage></HomePage>
+            <MainApp></MainApp>
+            {/*<Header></Header>
+            <HomePage></HomePage>*/}
             {/*<BrowserRouter>
                 <Routes>
                     <Route path="/chert" element={<Chert/>}/>

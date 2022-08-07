@@ -22,15 +22,22 @@ i18n
                     login: {
                         sign_in: 'Sign in',
                         sign_up: 'Sign up'
+                    },
+                    Test:{
+                        Test : 'MyTest'
                     }
                 }
             },
-            de: {
+            fa: {
                 translation: {
                     login: {
                         sign_in: 'ورود',
                         sign_up: 'ثبت نام'
+                    },
+                    Test:{
+                        Test : 'تست'
                     }
+
                 }
             }
         }
