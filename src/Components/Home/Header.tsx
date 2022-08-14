@@ -1,7 +1,7 @@
 import "./Resources/Header.css";
 import {Trans, useTranslation} from "react-i18next";
 import React, {useContext} from "react";
-import {Languages, ThemeContext} from "../../AppContext";
+import {Languages, ThemeContext,LanguageContext} from "../../AppContext";
 
 
 const Header = ()=>{
@@ -16,9 +16,21 @@ const Header = ()=>{
             </div>
             <div>
                 {Object.keys(Languages).map((lng) => (
-                    <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+                    /*<button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
                         {Languages[lng].nativeName}
-                    </button>
+                    </button>*/
+                    <LanguageContext.Consumer>
+                    {({lan, changeLanguage}) => (
+                        <button
+                            key={lng}
+                            style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }}
+                            type="submit"
+                            onClick={() => {i18n.changeLanguage(lng);{changeLanguage.call(this)}}}>
+                                {Languages[lng].nativeName}
+
+                        </button>
+                    )}
+                    </LanguageContext.Consumer>
                 ))}
             </div>
 

@@ -19,12 +19,18 @@ export const ThemeContext = React.createContext({
 });
 
 export const Languages:any = {
-    en: { nativeName: 'English' },
-    fa: { nativeName: 'Persian' }
+    en: {
+        nativeName: 'English',
+        direction : 'ltr'
+    },
+    fa: {
+        nativeName: 'Persian' ,
+        direction : 'rtl'
+    }
 };
 export const LanguageContext = React.createContext({
-    theme: themes.dark,
-    toggleTheme: () => {},
+    lan: Languages.en,
+    changeLanguage: () => {},
 });
 
 const UserContext = React.createContext({

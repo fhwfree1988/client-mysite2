@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,6 +12,7 @@ import HomePage from "./Components/Home/HomePage";
 import Header from "./Components/Home/Header";
 import './i18n/i18n';
 import MainApp from "./mainApp";
+import {ThemeContext, themes} from "./AppContext";
 /*ReactDOM.render(
     <React.StrictMode>
         {/!*<SecurityComponent/>*!/}
@@ -27,7 +28,9 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
 /*    <SecurityProvider>*/
         <Authentication>
-            <MainApp></MainApp>
+
+                <MainApp></MainApp>
+
             {/*<Header></Header>
             <HomePage></HomePage>*/}
             {/*<BrowserRouter>
