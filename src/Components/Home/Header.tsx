@@ -25,7 +25,7 @@ const Header = ()=>{
                             key={lng}
                             style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }}
                             type="submit"
-                            onClick={() => {i18n.changeLanguage(lng);{changeLanguage.call(this)}}}>
+                            onClick={changeLanguage}>
                                 {Languages[lng].nativeName}
 
                         </button>

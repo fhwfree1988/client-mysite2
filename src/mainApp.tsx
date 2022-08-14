@@ -3,6 +3,8 @@ import HomePage from "./Components/Home/HomePage";
 import Authentication from "./Components/Authentication/Authentication";
 import React, {useContext, useState} from "react";
 import {ThemeContext, LanguageContext, themes, Languages} from "./AppContext";
+import {i18n} from "i18next";
+import {useTranslation} from "react-i18next";
 /*import {ThemeContext, themes} from "./AppContext";*/
 
 
@@ -26,15 +28,18 @@ const MainApp = () =>{
     }*/
     const [Theme,setTheme] = useState(themes.dark)
     const [lang,setLang] = useState(Languages.fa)
+    const { t,i18n  } = useTranslation();
     return(
         <LanguageContext.Provider value={{
-            lan: Theme,
+            lan: lang,
             changeLanguage: () => {
-                if(Theme == Languages.fa){
+                if(lang == Languages.fa){
                     setLang(Languages.en)
+
                 }else {
                     setLang(Languages.fa)
                 }
+                {i18n.changeLanguage(lang)}
             },
         }}>
         <ThemeContext.Provider value={{
